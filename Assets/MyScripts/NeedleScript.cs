@@ -6,10 +6,10 @@ public class NeedleScript : MonoBehaviour {
 
 
     public float needleMoveSpeed;
+    float currentPlayBackSpeed;
     public Transform startingPos;
     public enum State {Stop = 0, Pause = 1, Play = 2}
     public State needlesState;
-    Rigidbody2D needleBody;
 
     
     void Update()
@@ -24,14 +24,14 @@ public class NeedleScript : MonoBehaviour {
         
             
         }
-        else
+        if (needlesState == State.Stop)
+        {
             NeedleStop();
-        
+        }
     }
     private void Start()
     {
-        needleBody = GetComponent<Rigidbody2D>();
-        //needlesState = State.Stop;
+      
     }
 
 
@@ -53,18 +53,16 @@ public class NeedleScript : MonoBehaviour {
     public void NeedlePlay()
     {
         
-        float playBackSpeed = needleMoveSpeed * Time.deltaTime;
+        currentPlayBackSpeed = needleMoveSpeed * Time.deltaTime;
 
-        transform.Translate(Vector2.right * playBackSpeed);
+        transform.Translate(Vector2.right * currentPlayBackSpeed);
 
-        //if (tranform.position >= )
     }
 
     public void NeedlePause()
     {
-
-
-        needleBody.constraints = RigidbodyConstraints2D.FreezePosition;
+        currentPlayBackSpeed = 0;
+    
     }
 
     public void NeedleStop()
@@ -84,9 +82,9 @@ public class NeedleScript : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D contact)
     {
-
-        Debug.Log("I am touching" + contact.gameObject.name);
+        Debug.Log("I am touching" + contact.gameObject.GetComponent<ButtonBehaviour>().numberOfClicks);
         
+
     }
 
 }
