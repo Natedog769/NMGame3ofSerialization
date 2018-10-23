@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 2057863387}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &50304073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.71099854, y: 0}
+  m_Offset: {x: 0.23468018, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -275,7 +275,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 48.127197, y: 1}
+  m_Size: {x: 49.079834, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &97264899
 GameObject:
@@ -874,11 +874,11 @@ RectTransform:
   m_Children:
   - {fileID: 516420472}
   m_Father: {fileID: 1405074318}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -161.9, y: 249.34998}
+  m_AnchoredPosition: {x: -168.3, y: 249.34998}
   m_SizeDelta: {x: 34.66, y: 25.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &270932119
@@ -893,7 +893,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002380371, y: -143.74126}
+  m_Offset: {x: -2.0606995, y: -143.74126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -904,7 +904,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99523926, y: 288.4825}
+  m_Size: {x: 2.255371, y: 288.4825}
   m_EdgeRadius: 0
 --- !u!114 &270932121
 MonoBehaviour:
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 676282788}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &504157297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,7 +2661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1755547938}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &683181632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2948,52 +2948,52 @@ MonoBehaviour:
   - name: Drum1
     clip: {fileID: 8300000, guid: ac41b773457528d4283540d2c6a630cf, type: 3}
     volume: 1
-    pitch: 0.2046
+    pitch: 1
     source: {fileID: 0}
   - name: Drum2
     clip: {fileID: 8300000, guid: 2bfc09e2433b36d4d8be426c3dee5d77, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: Drum3
     clip: {fileID: 8300000, guid: b36378120965ac64f9e5ec584bd804a2, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Drum4
     clip: {fileID: 8300000, guid: faf138f608db5464996b31b12dbd7bfa, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: Drum5
     clip: {fileID: 8300000, guid: 21f47f8382fa2b74d8e33a8f7800cbb1, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Drum6
     clip: {fileID: 8300000, guid: 3c8353e9530be9e41b75f663b75548cd, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: Drum7
     clip: {fileID: 8300000, guid: 52d1e71538b5ca742be2c2bd510a2dd7, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: Drum8
     clip: {fileID: 8300000, guid: ba529e7370bb54343ae2c7922ff41cd2, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: Drum9
     clip: {fileID: 8300000, guid: 67297544523677c43bece0ce68559400, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: Drum10
     clip: {fileID: 8300000, guid: 30212006fcfbaba46aaf026094f66d2f, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   bassClips: []
   guitarClips: []
@@ -4016,7 +4016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 773125265}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &1086246662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4115,7 +4115,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.6159363, y: 0}
+  m_Offset: {x: 0.2946167, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4126,7 +4126,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 48.336975, y: 1}
+  m_Size: {x: 49.34558, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1104309953
 GameObject:
@@ -4324,7 +4324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 2086754074}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &1242646851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4630,7 +4630,7 @@ RectTransform:
   m_Children:
   - {fileID: 1472461486}
   m_Father: {fileID: 1405074318}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5056,9 +5056,9 @@ RectTransform:
   - {fileID: 879055409}
   - {fileID: 453089342}
   - {fileID: 448710940}
+  - {fileID: 1279577943}
   - {fileID: 1572031307}
   - {fileID: 270932118}
-  - {fileID: 1279577943}
   - {fileID: 1773851404}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -5998,7 +5998,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1405074318}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6506,7 +6506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -161.90002, y: 249.35}
+  m_AnchoredPosition: {x: -168.30002, y: 249.35}
   m_SizeDelta: {x: -1256.3, y: -781.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773851405
@@ -6965,7 +6965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1150600463}
   numberOfClicks: 0
-  maxNumberOfClicks: 8
+  maxNumberOfClicks: 10
 --- !u!114 &1977116067
 MonoBehaviour:
   m_ObjectHideFlags: 0
