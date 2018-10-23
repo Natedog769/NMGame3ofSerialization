@@ -316,7 +316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -37.6, y: 96.5}
+  m_AnchoredPosition: {x: -37.599976, y: 96.5}
   m_SizeDelta: {x: -923.2, y: -732.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97264901
@@ -533,7 +533,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &190667679
 GameObject:
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78574bcbb6683424182ddd99f6cee818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needleMoveSpeed: 30
+  needleMoveSpeed: 10
   startingPos: {fileID: 1773851404}
   needlesState: 0
 --- !u!50 &270932124
@@ -2036,11 +2036,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 650, y: 450, z: -850}
+  m_LocalPosition: {x: 650, y: 450, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588396063
 GameObject:
@@ -2917,6 +2917,99 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 698963130}
   m_CullTransparentMesh: 0
+--- !u!1 &726750403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726750405}
+  - component: {fileID: 726750404}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &726750404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726750403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308b50a5aef74aa47b0f9c466dd03c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drumClips:
+  - name: Drum1
+    clip: {fileID: 8300000, guid: ac41b773457528d4283540d2c6a630cf, type: 3}
+    volume: 1
+    pitch: 0.2046
+    source: {fileID: 0}
+  - name: Drum2
+    clip: {fileID: 8300000, guid: 2bfc09e2433b36d4d8be426c3dee5d77, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum3
+    clip: {fileID: 8300000, guid: b36378120965ac64f9e5ec584bd804a2, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum4
+    clip: {fileID: 8300000, guid: faf138f608db5464996b31b12dbd7bfa, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum5
+    clip: {fileID: 8300000, guid: 21f47f8382fa2b74d8e33a8f7800cbb1, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum6
+    clip: {fileID: 8300000, guid: 3c8353e9530be9e41b75f663b75548cd, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum7
+    clip: {fileID: 8300000, guid: 52d1e71538b5ca742be2c2bd510a2dd7, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum8
+    clip: {fileID: 8300000, guid: ba529e7370bb54343ae2c7922ff41cd2, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum9
+    clip: {fileID: 8300000, guid: 67297544523677c43bece0ce68559400, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Drum10
+    clip: {fileID: 8300000, guid: 30212006fcfbaba46aaf026094f66d2f, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  bassClips: []
+  guitarClips: []
+--- !u!4 &726750405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726750403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771368775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,7 +3421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &977831587
 GameObject:
@@ -4933,7 +5026,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 534669904}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -4968,7 +5061,7 @@ RectTransform:
   - {fileID: 1279577943}
   - {fileID: 1773851404}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7023,7 +7116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -37.6, y: -3.5}
+  m_AnchoredPosition: {x: -37.599976, y: -3.5}
   m_SizeDelta: {x: -923.2, y: -732.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994520498
